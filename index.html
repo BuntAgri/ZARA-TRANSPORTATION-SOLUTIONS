@@ -1,79 +1,117 @@
-
 <!DOCTYPE html>
-<html lang="fr">
+<html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>V.E. BATIMENT</title>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>ZARA TRANSPORTATION SOLUTIONS</title>
   <style>
-    * { margin: 0; padding: 0; box-sizing: border-box; }
-    body { font-family: 'Inter', sans-serif; background: #f9fafb; color: #111827; line-height: 1.6; }
-    header, footer { background: #1f2937; color: white; text-align: center; padding: 30px; }
-    nav a { color: #fbbf24; margin: 0 12px; text-decoration: none; font-weight: 600; }
-    section { padding: 60px 20px; max-width: 1200px; margin: auto; text-align: center; }
-    h2 { color: #1f2937; margin-bottom: 20px; font-size: 2.4em; }
-    .gallery { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 20px; }
-    .gallery img { width: 100%; border-radius: 8px; }
-    .contact-form input, .contact-form textarea {
-      width: 100%; padding: 10px; margin: 10px 0; border: 1px solid #ccc; border-radius: 5px;
+    :root{
+      --blue:#143c7d;     /* primary */
+      --yellow:#f7c72a;   /* accent  */
+      --light:#f6f8ff;    /* page bg */
+      --card:#ffffff;     /* cards   */
     }
-    iframe { width: 100%; height: 300px; border: 0; border-radius: 8px; margin-top: 20px; }
+    *{box-sizing:border-box}
+    body{margin:0;font-family:Arial,Helvetica,sans-serif;background:var(--light);color:#222}
+    a{color:var(--blue);text-decoration:none}
+    header{background:var(--blue);color:#fff;text-align:center;padding:28px 16px;border-bottom:5px solid var(--yellow)}
+    header h1{margin:0;font-size:2.4rem}
+    header p{margin:6px 0 0;opacity:.95}
+    nav{background:#0f1720;text-align:center;padding:12px}
+    nav a{color:#fff;margin:0 14px;font-weight:700}
+    nav a:hover{color:var(--yellow)}
+    .hero{display:flex;justify-content:center;align-items:center;padding:32px;background:#e9eefc}
+    .hero img{max-width:980px;width:95%;border-radius:12px;border:4px solid var(--yellow)}
+    .section{max-width:1100px;margin:22px auto;background:var(--card);padding:22px;border-radius:12px;box-shadow:0 6px 18px rgba(0,0,0,.06)}
+    .section h2{margin:0 0 12px;color:var(--blue)}
+    .two-col{display:grid;grid-template-columns:1fr 1fr;gap:18px}
+    ul{line-height:1.8;margin:0;padding-left:18px}
+    .gallery{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:14px;margin-top:14px}
+    .gallery img{width:100%;border-radius:10px;border:2px solid var(--yellow)}
+    .cta{margin-top:12px;display:flex;gap:12px;flex-wrap:wrap}
+    .btn{background:var(--yellow);color:#000;padding:12px 16px;border-radius:8px;font-weight:800}
+    .btn.secondary{background:#fff;color:var(--blue);border:2px solid var(--blue)}
+    footer{background:var(--blue);color:#fff;text-align:center;padding:18px;margin-top:26px;border-top:5px solid var(--yellow)}
   </style>
 </head>
 <body>
 
-<header>
-  <h1>V.E. BATIMENT</h1>
+  <header>
+    <h1>ZARA TRANSPORTATION SOLUTIONS</h1>
+    <p>General Freight Trucking • Lodi, CA</p>
+  </header>
+
   <nav>
-    <a href="#about">Présentation</a>
+    <a href="#about">About</a>
     <a href="#services">Services</a>
-    <a href="#gallery">Galerie</a>
+    <a href="#gallery">Gallery</a>
     <a href="#contact">Contact</a>
-    <a href="#map">Adresse</a>
   </nav>
-</header>
 
-<section id="about">
-  <h2>Présentation</h2>
-  <p>Basée à Les Mureaux, V.E. BATIMENT est une entreprise spécialisée dans la maçonnerie générale et les gros travaux de construction. Grâce à une équipe qualifiée, nous réalisons des chantiers sur mesure en respectant les normes de qualité et de sécurité.</p>
-</section>
-
-<section id="services">
-  <h2>Nos Services</h2>
-  <p>Gros œuvre de bâtiment, travaux de maçonnerie, fondations, rénovation structurelle, et accompagnement personnalisé pour tous vos projets de construction.</p>
-</section>
-
-<section id="gallery">
-  <h2>Galerie</h2>
-  <div class="gallery">
-    <img src="https://images.unsplash.com/photo-1570126681032-3a7c41f13b0d?auto=format&fit=crop&w=800&q=80" alt="chantier 1">
-    <img src="https://images.unsplash.com/photo-1570129477492-45c003edd2be?auto=format&fit=crop&w=800&q=80" alt="chantier 2">
-    <img src="https://images.unsplash.com/photo-1581090700227-1e37b190418e?auto=format&fit=crop&w=800&q=80" alt="chantier 3">
+  <!-- HERO -->
+  <div class="hero">
+    <img src="https://avatars.mds.yandex.net/i?id=51846d6e35e30d7d27be5969745dac7b7ef71b50-4575625-images-thumbs&n=13" alt="Zara Transport Hero">
   </div>
-</section>
 
-<section id="contact">
-  <h2>Contactez-nous</h2>
-  <p>Email : contact@vebatiment.shop</p>
-  <p>Téléphone : +33 6 05 99 64 90</p>
-  <form class="contact-form">
-    <input type="text" placeholder="Nom">
-    <input type="email" placeholder="Email">
-    <textarea placeholder="Votre message"></textarea>
-    <button type="submit">Envoyer</button>
-  </form>
-</section>
+  <!-- ABOUT -->
+  <section id="about" class="section">
+    <h2>About Us</h2>
+    <div class="two-col">
+      <p><strong>ZARA TRANSPORTATION SOLUTIONS</strong> delivers dependable trucking and logistics support for businesses across California. We prioritize safety, on-time delivery, and clear communication.</p>
+      <p>Address: <strong>12593 Mundy Ln, Lodi, CA 95240</strong>. Get in touch for tailored freight solutions.</p>
+    </div>
+    <div class="cta">
+      <a class="btn" href="tel:+14482108201">📞 Call: +1 448-210-8201</a>
+      <a class="btn secondary" href="mailto:admin@zaratran.shop">✉ Email: admin@zaratran.shop</a>
+    </div>
+  </section>
 
-<section id="map">
-  <h2>Adresse</h2>
-  <p>66 Avenue du Maréchal Foch, 78130 Les Mureaux, France</p>
-  <iframe src="https://www.google.com/maps?q=66+Avenue+du+Mar%C3%A9chal+Foch,+Les+Mureaux,+France&output=embed" allowfullscreen loading="lazy"></iframe>
-</section>
+  <!-- SERVICES -->
+  <section id="services" class="section">
+    <h2>Our Services</h2>
+    <ul>
+      <li>General freight trucking</li>
+      <li>Local & regional delivery</li>
+      <li>Logistics coordination & support</li>
+      <li>Time-critical shipments</li>
+      <li>Business distribution assistance</li>
+    </ul>
+  </section>
 
-<footer>
-  &copy; 2025 V.E. BATIMENT — Tous droits réservés
-</footer>
+  <!-- GALLERY -->
+  <section id="gallery" class="section">
+    <h2>Gallery</h2>
+    <div class="gallery">
+      <img src="https://avatars.mds.yandex.net/i?id=8b7f935d062888939232d67a3d77d215-4233036-images-thumbs&n=13" alt="Fleet 1">
+      <img src="https://avatars.mds.yandex.net/i?id=c2265cbc0da5523547ddae62c54a1521df2f9e6e-5232864-images-thumbs&n=13" alt="Fleet 2">
+      <img src="https://avatars.mds.yandex.net/i?id=ccea3c36073d8809b3b427a3d4fc4ebd52cb31e0-16344332-images-thumbs&n=13" alt="Warehouse">
+      <img src="https://avatars.mds.yandex.net/i?id=8722492f18b67467d81f10cddc377e48b302594c-4220121-images-thumbs&n=13" alt="Road Logistics">
+    </div>
+  </section>
+
+  <!-- CONTACT -->
+  <section id="contact" class="section">
+    <h2>Contact</h2>
+    <div class="two-col">
+      <div>
+        <p>📍 <strong>Address:</strong> 12593 Mundy Ln, Lodi, CA 95240, United States</p>
+        <p>☎ <strong>Phone:</strong> <a href="tel:+14482108201">+1 448-210-8201</a></p>
+        <p>✉ <strong>Email:</strong> <a href="mailto:admin@zaratran.shop">admin@zaratran.shop</a></p>
+      </div>
+      <div>
+        <p><em>Hours</em></p>
+        <ul>
+          <li>Mon–Fri: 8:00–18:00</li>
+          <li>Sat: 9:00–15:00</li>
+          <li>Sun: Closed</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 ZARA TRANSPORTATION SOLUTIONS — Transportation & Logistics</p>
+  </footer>
 
 </body>
 </html>
